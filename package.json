@@ -1,0 +1,29 @@
+{
+  "name": "task-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test:Unit": " jest --testPathPattern=Tests/Unit",
+    "test:Integration": " jest --testPathPattern=Tests/Integration ",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.4",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
