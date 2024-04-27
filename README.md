@@ -65,6 +65,7 @@ If not, an appropriate response is provided.
 
 ### 🔶 Retrieve all tasks : `GET  /api/get`
 💬Response <br/>
+Sample response
 ```javascript
 [
     {
@@ -91,7 +92,8 @@ Provide parameter to the API, for example:
  /api/get/662beb50468dd3b438653abd
 ```
 💬Response <br/>
-If all fields are present with valid inputs, the response is generated.
+If all fields are present with valid inputs, the response is generated.</br>
+Sample response
 ```javascript
     {
       "_id": "662beb50468dd3b438653abd",
