@@ -36,7 +36,7 @@ Inputs -
 - Description: (string) Description of the task.
 - Status: (string) The status of the task. Must be one of: "Pending", "In Progress", or "Completed".
 - Date: (string) Date of the task in the format "dd-mm-yyyy".
-
+- Every field is required.
 The Req.body contains sample data.
 
 ```javascript
@@ -106,7 +106,7 @@ If all fields are present with valid inputs, the response is generated.
 📩 Request <br/>
 Provide parameter to the API, for example:
 ```
-  /api/get/662beb50468dd3b438653abd
+  /api/update/662beb50468dd3b438653abd
 ```
 
 The Req.body contains sample data.
@@ -131,7 +131,7 @@ If all fields are present with valid inputs, the response is generated.
 📩 Request <br/>
 Provide parameter to the API, for example:
 ```
-  /api/get/662beb50468dd3b438653abd
+  /api/delete/662beb50468dd3b438653abd
 ```
 💬Response <br/>
 If all fields are present with valid inputs, the response is generated.
