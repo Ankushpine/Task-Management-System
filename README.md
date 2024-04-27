@@ -1,0 +1,140 @@
+# Task Management System
+
+A robust task management system built with Express.js and MongoDB for <b>Convivity Technology</b>. Features include seamless task handling, secure user authentication, and comprehensive API documentation. Rigorous testing using Jest ensures code reliability. Easy setup and scalability make it ideal for various project requirements.
+
+## Features:
+- <b>Task Management:</b> Efficiently manage tasks with functionalities for creation, updating, and deletion.
+- <b>API Documentation:</b> Comprehensive documentation for easy integration and usage.
+- <b>Unit & Integration Testing:</b> Rigorous testing suite implemented using Jest for maintaining code quality and reliability.
+- <b>MongoDB Integration:</b> Leveraging MongoDB for scalable and flexible data storage solutions.
+- <b>Express.js Framework:</b> Utilizing Express.js for rapid development and enhanced performance.
+
+## Technologies Used:
+- <b>Express.js:</b> Fast, unopinionated, minimalist web framework for Node.js.
+- <b>MongoDB:</b> NoSQL database for scalable, high-performance applications.
+- <b>Jest:</b> Delightful JavaScript Testing Framework with a focus on simplicity.
+- <b>Supertest:</b> Super-agent driven library for testing HTTP servers.
+
+## API Endpoints and their functions 
+
+| Method   | URL                                      | Description                            |
+| -------- | ---------------------------------------- | ---------------------------------------|
+| `POST`   | `/api/add`                               | Add new task.                          |
+| `GET`    | `/api/get`                               | Retrieve all tasks.                    |
+| `GET`    | `/api/get/:taskID`                       | Retrieve a single task by its ID.      |
+| `PUT`    | `/api/update/:taskID`                    | Update a task by its ID.               |
+| `DELETE` | `/api/delete/:taskID`                    | Delete a task by its ID.               |
+
+## API Endpoints
+
+### &#8680; Add new task `/api/add`
+
+- Title: (string) The title of the task.
+- Description: (string) Description of the task.
+- Status: (string) The status of the task. Must be one of: "Pending", "In Progress", or "Completed".
+- Date: (string) Date of the task in the format "dd-mm-yyyy".
+
+The Req.body contains sample data.
+
+```javascript
+{
+  "title": "Sample Task",
+  "description": "This is a sample task description.",
+  "status": "In Progress",
+  "date": "27-04-2024"
+}
+```
+If all fields are present with valid inputs, the response is generated.
+```javascript
+{
+"message": "Task successfully added."
+}
+```
+
+If not, an appropriate response is provided.
+```javascript
+{
+ "error": The reason for the error...
+}
+```
+
+### &#8680; Retrieve all tasks `/api/get`
+Response
+```javascript
+[
+    {
+      "_id": "662beb50468dd3b438653abd",
+      "title": "Sample Task1",
+      "description": "This is a sample task description.",
+      "status": "In Progress",
+      "date": "27-04-2024"
+    },
+    {
+      "_id": "662beb50468dd3b438653abd",
+      "title": "Sample Task2",
+      "description": "This is a sample task description.",
+      "status": "In Progress",
+      "date": "27-04-2024"
+    }  
+]
+```
+
+### &#8680; Retrieve all tasks `/api/get/:taskID`
+
+Provide parameter to the API, for example:
+```
+ /api/get/662beb50468dd3b438653abd
+```
+
+If all fields are present with valid inputs, the response is generated.
+```javascript
+    {
+      "_id": "662beb50468dd3b438653abd",
+      "title": "Sample Task1",
+      "description": "This is a sample task description.",
+      "status": "In Progress",
+      "date": "27-04-2024"
+    }
+```
+
+
+### &#8680; Update a task by its ID `/api/update/:taskID`
+Provide parameter to the API, for example:
+```
+  /api/get/662beb50468dd3b438653abd
+```
+
+The Req.body contains sample data.
+```javascript
+{
+  "title": "Update Sample Task",
+  "description": "This is a sample task description.",
+  "status": "In Progress",
+  "date": "27-04-2024"
+}
+```
+If all fields are present with valid inputs, the response is generated.
+```javascript
+{
+    "message": "Task successfully updated."
+}
+```
+
+
+### &#8680; Delete a task by its ID `/api/delete/:taskID`
+Provide parameter to the API, for example:
+```
+  /api/get/662beb50468dd3b438653abd
+```
+If all fields are present with valid inputs, the response is generated.
+```javascript
+{
+    "message": "Task successfully deleted."
+}
+```
+
+
+
+
+
+

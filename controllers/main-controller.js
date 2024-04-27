@@ -15,6 +15,9 @@ export const addNew = async (req, res) => {
 export const getAll = async (req, res) => {
   try {
     const tasks = await taskModel.find({});
+    if(tasks==[]){
+      return res.status(200).json({ message: "There are no tasks." });
+    }
     return res.status(200).json(tasks);
   } catch (error) {
     console.log("Error in getAll Controller :: ", error.message);
