@@ -37,6 +37,7 @@ Inputs -
 - Status: (string) The status of the task. Must be one of: "Pending", "In Progress", or "Completed".
 - Date: (string) Date of the task in the format "dd-mm-yyyy".
 - Every field is required.
+
 The Req.body contains sample data.
 
 ```javascript
