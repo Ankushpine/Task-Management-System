@@ -26,7 +26,7 @@ A robust task management system built with Express.js and MongoDB for <b>Convivi
 | `PUT`    | `/api/update/:taskID`                    | Update a task by its ID.               |
 | `DELETE` | `/api/delete/:taskID`                    | Delete a task by its ID.               |
 
-## ⚙ API Documentation
+## 📖 API Documentation
 
 ### 🔶 Add new task : `POST  /api/add`
 
