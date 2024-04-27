@@ -1,6 +1,6 @@
 # Task Management System
 
-A robust task management system built with Express.js and MongoDB for <b>Convivity Technology</b>. Features include seamless task handling, secure user authentication, and comprehensive API documentation. Rigorous testing using Jest ensures code reliability. Easy setup and scalability make it ideal for various project requirements.
+A robust task management system built with Express.js and MongoDB for <b>Convivity Technology</b>. Features include seamless task handling and comprehensive API documentation. Rigorous testing using Jest ensures code reliability. Easy setup and scalability make it ideal for various project requirements.
 ### 🌐 Hosted Link : [Link](https://pine-task-management-system.onrender.com)
 ### 🌐 Postman collection link : [Link](https://www.postman.com/ankush-pine/workspace/task-management/collection/28535484-bb0fe2c6-5c96-4a8c-b7d2-3bf7c3e39d67)
 ## 🚀Features
@@ -26,10 +26,12 @@ A robust task management system built with Express.js and MongoDB for <b>Convivi
 | `PUT`    | `/api/update/:taskID`                    | Update a task by its ID.               |
 | `DELETE` | `/api/delete/:taskID`                    | Delete a task by its ID.               |
 
-## ⚙ API Endpoints and their functions 
+## ⚙ API Documentation
 
-### 🔶 Add new task `/api/add`
+### 🔶 Add new task : `POST  /api/add`
 
+🔹Request <br/>
+Inputs - 
 - Title: (string) The title of the task.
 - Description: (string) Description of the task.
 - Status: (string) The status of the task. Must be one of: "Pending", "In Progress", or "Completed".
@@ -45,6 +47,7 @@ The Req.body contains sample data.
   "date": "27-04-2024"
 }
 ```
+🔹Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
 {
@@ -59,8 +62,8 @@ If not, an appropriate response is provided.
 }
 ```
 
-### 🔶 Retrieve all tasks `/api/get`
-Response
+### 🔶 Retrieve all tasks : `GET  /api/get`
+🔹Response <br/>
 ```javascript
 [
     {
@@ -80,13 +83,13 @@ Response
 ]
 ```
 
-### 🔶 Retrieve a single task by its ID `/api/get/:taskID`
-
+### 🔶 Retrieve a single task by its ID : `GET  /api/get/:taskID`
+🔹Request <br/>
 Provide parameter to the API, for example:
 ```
  /api/get/662beb50468dd3b438653abd
 ```
-
+🔹Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
     {
@@ -99,7 +102,8 @@ If all fields are present with valid inputs, the response is generated.
 ```
 
 
-### 🔶 Update a task by its ID `/api/update/:taskID`
+### 🔶 Update a task by its ID : `PUT  /api/update/:taskID`
+🔹Request <br/>
 Provide parameter to the API, for example:
 ```
   /api/get/662beb50468dd3b438653abd
@@ -114,6 +118,7 @@ The Req.body contains sample data.
   "date": "27-04-2024"
 }
 ```
+🔹Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
 {
@@ -122,11 +127,13 @@ If all fields are present with valid inputs, the response is generated.
 ```
 
 
-### 🔶 Delete a task by its ID `/api/delete/:taskID`
+### 🔶 Delete a task by its ID : `DELETE  /api/delete/:taskID`
+🔹Request <br/>
 Provide parameter to the API, for example:
 ```
   /api/get/662beb50468dd3b438653abd
 ```
+🔹Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
 {
