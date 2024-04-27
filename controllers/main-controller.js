@@ -15,7 +15,8 @@ export const addNew = async (req, res) => {
 export const getAll = async (req, res) => {
   try {
     const tasks = await taskModel.find({});
-    if(tasks==[]){
+    console.log(tasks);
+    if(tasks.length==0){
       return res.status(200).json({ message: "There are no tasks." });
     }
     return res.status(200).json(tasks);
