@@ -133,7 +133,13 @@ If all fields are present with valid inputs, the response is generated.
 }
 ```
 
-
+  ## How to setup the project on local system 💻:
+- Clone the repository.
+- Install dependencies using `npm i`.
+- Set up environment variables, MongoDB URL and PORT.
+- Run the application using `npm start`.
+- For unit test use `npm run test:Unit`.
+- For integration test use `npm run test:Integration`.
 
 
 
