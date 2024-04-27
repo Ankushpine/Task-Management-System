@@ -30,7 +30,7 @@ A robust task management system built with Express.js and MongoDB for <b>Convivi
 
 ### 🔶 Add new task : `POST  /api/add`
 
-🔹Request <br/>
+📩 Request <br/>
 Inputs - 
 - Title: (string) The title of the task.
 - Description: (string) Description of the task.
@@ -47,7 +47,7 @@ The Req.body contains sample data.
   "date": "27-04-2024"
 }
 ```
-🔹Response <br/>
+💬Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
 {
@@ -63,7 +63,7 @@ If not, an appropriate response is provided.
 ```
 
 ### 🔶 Retrieve all tasks : `GET  /api/get`
-🔹Response <br/>
+💬Response <br/>
 ```javascript
 [
     {
@@ -84,12 +84,12 @@ If not, an appropriate response is provided.
 ```
 
 ### 🔶 Retrieve a single task by its ID : `GET  /api/get/:taskID`
-🔹Request <br/>
+📩Request <br/>
 Provide parameter to the API, for example:
 ```
  /api/get/662beb50468dd3b438653abd
 ```
-🔹Response <br/>
+💬Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
     {
@@ -103,7 +103,7 @@ If all fields are present with valid inputs, the response is generated.
 
 
 ### 🔶 Update a task by its ID : `PUT  /api/update/:taskID`
-🔹Request <br/>
+📩 Request <br/>
 Provide parameter to the API, for example:
 ```
   /api/get/662beb50468dd3b438653abd
@@ -118,7 +118,7 @@ The Req.body contains sample data.
   "date": "27-04-2024"
 }
 ```
-🔹Response <br/>
+💬Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
 {
@@ -128,12 +128,12 @@ If all fields are present with valid inputs, the response is generated.
 
 
 ### 🔶 Delete a task by its ID : `DELETE  /api/delete/:taskID`
-🔹Request <br/>
+📩 Request <br/>
 Provide parameter to the API, for example:
 ```
   /api/get/662beb50468dd3b438653abd
 ```
-🔹Response <br/>
+💬Response <br/>
 If all fields are present with valid inputs, the response is generated.
 ```javascript
 {
