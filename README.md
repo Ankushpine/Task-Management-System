@@ -1,6 +1,6 @@
 # Task Management System
 
-A robust task management system built with Express.js and MongoDB for <b>Convivity Technology</b>. Features include seamless task handling and comprehensive API documentation. Rigorous testing using Jest ensures code reliability. Easy setup and scalability make it ideal for various project requirements.
+A robust task management system built with Express.js and MongoDB. Features include seamless task handling and comprehensive API documentation. Rigorous testing using Jest ensures code reliability. Easy setup and scalability make it ideal for various project requirements.
 ### 🌐 Hosted Link : [Link](https://pine-task-management-system.onrender.com)
 ### 🌐 Postman collection link : [Link](https://www.postman.com/ankush-pine/workspace/task-management/collection/28535484-bb0fe2c6-5c96-4a8c-b7d2-3bf7c3e39d67)
 ## 🚀Features
